@@ -13,15 +13,15 @@ logger = logging.getLogger(__name__)
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hey this is your bot!')
+    update.message.reply_text('اضغط هنا للدخول للبوت :@i2pdfbot')
 
 
 def help(update, context):
     """Send a message when the command /help is issued."""
-    update.message.reply_text('Currently I am in Alpha stage, help me also!')
+    update.message.reply_text('@i2pdfbot')
 
 def piracy(update, context):
-    update.message.reply_text('Ahhan, FBI wants to know your location!')
+    update.message.reply_text('@i2pdfbot')
 
 
 def echo(update, context):
@@ -39,7 +39,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("//TOKEN//", use_context=True)
+    updater = Updater("5209992854:AAH3hw8_ILSRgvZXdsTTh_TbcZ7d-8-kQx0", use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
